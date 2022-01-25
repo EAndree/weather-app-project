@@ -21,118 +21,112 @@
     <div class="container">
       <div class="weatherApp">
 
-        <form id="search-submit-city-form">
+          <form id="search-submit-city-form">
 
-        <div class="row">
-          <div class="col-6">
-            <!-- search bar -->
-            <form class="searchBlock">
-              <input
-                class="form-control searchCityBar"
-                id="query-city"
-                type="search"
-                placeholder="Search city"
-              />
-
-          </div>
-          <!-- submit button -->
-          <div class="col-3">
-
-<input type="submit"
-class= "form-control submitBtn">
-
-          <!-- current location button -->
-          <div class="col-3">
-
-<input type="button"
-value="My Location"
-class="btn" id="current-location-btn">
-          </div>
-        </form>
-
-          </div>
-        </div>
-
-        <div class="row justify-content-start">
-          <!-- selected city info-->
-          <div class="col-6">
-            <div class="cityBlock">
-              <h1 id="selectedCity">Paris, France</h1>
-              <ul>
-                <li id="current-date-time">Wed, 20. Oct 2021</li>
-                <li>max <span id="maxTemp">25</span>°C</li>
-                <li> min <span id="minTemp">10</span>°C</li>
-                <li>humidity <span id="humidity">0</span>%</li>
-              </ul>
+          <div class="row">
+            <div class="col-6">
+              <!-- search bar -->
+              <form class="searchBlock">
+                <input
+                  class="form-control searchCityBar"
+                  id="query-city"
+                  type="search"
+                  placeholder="Search city"
+                />
+            </div>
+            <!-- submit button -->
+            <div class="col-3">
+                <input type="submit"
+                class= "form-control submitBtn">
+              </form>
             </div>
           </div>
-          <!-- weather now in selected city-->
-          <div class="col-6">
-            <div class="weatherBlock">
-              <div class="clearfix">
-                <div class="float-start">
-              <ul>
-                <li id="weatherDescription">Sunny</li>
-                <li>
-                <span class="temperature"> 20 </span>
-                <a href=# id="celsius-link">°C</a> | <a href=# id="fahrenheit-link">°F</a>
-                </li>
-              </ul>
+
+          <div class="row justify-content-start">
+            <!-- selected city info-->
+            <div class="col-6">
+              <div class="cityBlock">
+                <h1 id="selectedCity">Paris, France</h1>
+                <ul>
+                  <li id="current-date-time">Wed, 20. Oct 2021</li>
+                  <li>max <span id="maxTemp">25</span>°C</li>
+                  <li> min <span id="minTemp">10</span>°C</li>
+                  <li>humidity <span id="humidity">0</span>%</li>
+                </ul>
               </div>
-              <img class="sun float-none" src="./images/sun.png" />
+            </div>
+            <!-- weather now in selected city-->
+            <div class="col-6">
+              <div class="weatherBlock">
+                <div class="clearfix">
+                  <div class="float-start">
+                <ul>
+                  <li id="weatherDescription">Sunny</li>
+                  <li>
+                  <span class="temperature"> 20 </span>
+                  <a href=# id="celsius-link">°C</a> | <a href=# id="fahrenheit-link">°F</a>
+                  </li>
+                </ul>
+                </div>
+                <img class="sun float-none" src="./images/sun.png" />
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
 <!-- forecast weather following days -->
-        <div class="row">
-        <div class="col">
-          <img src="./images/cloudy.png" />
-          <p>
-            Sunday <br />
-            11°C/23°C
-          </p>
-        </div>
+          <div class="row">
+              <div class="col">
+                <img src="./images/cloudy.png" />
+                <p>
+                  Sunday <br />
+                  11°C/23°C
+                </p>
+              </div>
 
-        <div class="col">
-          <img src="./images/rain.png" />
-          <p>
-            Monday <br />
-            9°C/18°C
-          </p>
-        </div>
-        <div class="col">
-          <img src="./images/rain.png" />
-          <p>
-            Tuesday <br />
-            8°C/19°C
-          </p>
-        </div>
-        <div class="col">
-          <img src="./images/cloudy.png" />
-          <p>
-            Wednesday <br />
-            12°C/22°C
-          </p>
-        </div>
-        <div class="col">
-          <img src="./images/sun.png" />
-          <p>
-            Thursday <br />
-            18°C/25°C
-          </p>
-        </div>
+              <div class="col">
+                <img src="./images/rain.png" />
+                <p>
+                  Monday <br />
+                  9°C/18°C
+                </p>
+              </div>
+
+              <div class="col">
+                <img src="./images/rain.png" />
+                <p>
+                  Tuesday <br />
+                  8°C/19°C
+                </p>
+              </div>
+
+              <div class="col">
+                <img src="./images/cloudy.png" />
+                <p>
+                  Wednesday <br />
+                  12°C/22°C
+                </p>
+              </div>
+
+              <div class="col">
+                <img src="./images/sun.png" />
+                <p>
+                  Thursday <br />
+                  18°C/25°C
+                </p>
+              </div>
+          </div>
+
       </div>
-    </div>
-        
+
 <!-- link to GitHub -->
           <footer>
           <a class="githubLink" href="https://github.com/EAndree/weather-app-project"> Open-source code </a>
           by Andreea Ban </footer>
-        
+
+    </div>
+
 <!-- link JS file -->
     <script src="./src/index.js"></script>
   </body>
 </html>
-
