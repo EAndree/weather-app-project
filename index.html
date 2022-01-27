@@ -52,24 +52,27 @@
                   <li>max <span id="maxTemp">25</span>°C</li>
                   <li> min <span id="minTemp">10</span>°C</li>
                   <li>humidity <span id="humidity">0</span>%</li>
+                  <li>wind speed <span id="windSpeed">0</span>km/h</li>
                 </ul>
               </div>
             </div>
             <!-- weather now in selected city-->
             <div class="col-6">
               <div class="weatherBlock">
-                <div class="clearfix">
-                  <div class="float-start">
-                <ul>
-                  <li id="weatherDescription">Sunny</li>
-                  <li>
-                  <span class="temperature"> 20 </span>
-                  <a href=# id="celsius-link">°C</a> | <a href=# id="fahrenheit-link">°F</a>
-                  </li>
-                </ul>
-                </div>
-                <img class="sun float-none" src="./images/sun.png" />
-                </div>
+                  <div id="descriptionDegrees">
+                      <ul>
+                        <li id="weatherDescription">Sunny</li>
+                        <li>
+                        <span id="temperatureNow"> 20 </span>
+                        <a href="#" id="celsius-link" class="active">°C</a> | <a href="#" id="fahrenheit-link">°F</a>
+                        </li>
+                      </ul>
+                  </div>
+                      <img
+                        class="sun float-none"
+                        src="./images/sun.png"
+                        alt="img"
+                        id="weatherMainImg"/>
               </div>
             </div>
           </div>
@@ -130,3 +133,4 @@
     <script src="./src/index.js"></script>
   </body>
 </html>
+
