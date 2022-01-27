@@ -75,9 +75,25 @@ img {
   margin: 15px 0px auto;
 }
 
-.sun {
+.weatherBlock .active {
+  color: black;
+  cursor: default;
+}
+
+.weatherBlock .active:hover {
+  text-decoration: none;
+}
+
+#descriptionDegrees {
   display: inline;
-  margin: 5px 20px auto;
+  align-items: center;
+  justify-content: center;
+}
+
+#weatherMainImg {
+  display: inline;
+  margin: 0px 20px auto;
+  width: 75px;
 }
 
 footer {
