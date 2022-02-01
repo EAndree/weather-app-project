@@ -10,18 +10,24 @@ body {
 .weatherApp {
   border: 1px solid #000;
   border-radius: 5px;
-  padding: 15px;
+  padding: 20px;
   margin: 10px auto;
   max-width: 600px;
 }
 
-.searchBlock {
+#search-submit-city-form {
+  margin-bottom: 10px;
+}
+
+#searchBlock {
   margin-top: 0px;
   margin-bottom: 30px;
 }
 
 .searchCityBar {
-  padding: 0px 50px 0px 50px;
+  text-align: center;
+  padding-top: 0px;
+  padding-bottom: 0px;
   margin: 0 auto;
 }
 
@@ -36,15 +42,20 @@ body {
 }
 
 .cityBlock {
-  color: #70757a;
   display: inline-block;
-  line-height: 16px;
+  margin: 10px 10px;
+}
+
+.cityBlock #selectedCity {
+  color: #000;
 }
 
 ul {
+  color: #70757a;
   padding: 0;
   margin: 0px 0px 20px;
   display: inline-block;
+  line-height: 20px;
 }
 
 li {
@@ -57,6 +68,10 @@ li {
 }
 
 p {
+  font-size: small;
+}
+
+.weather-forecast {
   font-size: small;
 }
 
@@ -73,6 +88,16 @@ img {
 
 .weatherBlock {
   margin: 15px 0px auto;
+  color: black;
+  text-align: center;
+}
+
+#weatherDescription {
+  color: #000;
+}
+
+#temperatureNow {
+  color: #000;
 }
 
 .weatherBlock .active {
@@ -92,12 +117,36 @@ img {
 
 #weatherMainImg {
   display: inline;
-  margin: 0px 20px auto;
+  margin: auto;
   width: 75px;
 }
 
+.weather-forcast-day {
+  color: black;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.weather-forecast-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.weather-forecast-temp {
+  text-align: center;
+  font-size: small;
+}
+
+.weather-forecast-temp .weather-forecast-temp-min {
+  color: #70757a;
+  margin-left: 3px;
+}
+
 footer {
-  text-align: initial;
+  text-align: center;
   font-size: small;
 }
 .githubLink {
