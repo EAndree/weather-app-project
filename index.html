@@ -18,29 +18,29 @@
     <link href="./src/styles.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="container">
+    <div class=".container-fluid">
       <div class="weatherApp">
 
-          <form id="search-submit-city-form">
+            <form id="search-submit-city-form">
 
-          <div class="row">
-            <div class="col-6">
-              <!-- search bar -->
-              <form class="searchBlock">
-                <input
-                  class="form-control searchCityBar"
-                  id="query-city"
-                  type="search"
-                  placeholder="Search city"
-                />
-            </div>
-            <!-- submit button -->
-            <div class="col-3">
-                <input type="submit"
-                class= "form-control submitBtn">
-              </form>
-            </div>
-          </div>
+                <div class="row">
+                  <div class="col-9">
+                    <!-- search bar -->
+                    <form id = "searchBlock">
+                      <input
+                        class="form-control searchCityBar"
+                        id="query-city"
+                        type="search"
+                        placeholder="Search city..."
+                      />
+                  </div>
+                  <!-- submit button -->
+                  <div class="col-3">
+                      <input type="submit"
+                      class= "form-control submitBtn">
+                  </div>
+                </div>
+            </form>
 
           <div class="row justify-content-start">
             <!-- selected city info-->
@@ -78,46 +78,7 @@
           </div>
 
 <!-- forecast weather following days -->
-          <div class="row">
-              <div class="col">
-                <img src="./images/cloudy.png" />
-                <p>
-                  Sunday <br />
-                  11°C/23°C
-                </p>
-              </div>
-
-              <div class="col">
-                <img src="./images/rain.png" />
-                <p>
-                  Monday <br />
-                  9°C/18°C
-                </p>
-              </div>
-
-              <div class="col">
-                <img src="./images/rain.png" />
-                <p>
-                  Tuesday <br />
-                  8°C/19°C
-                </p>
-              </div>
-
-              <div class="col">
-                <img src="./images/cloudy.png" />
-                <p>
-                  Wednesday <br />
-                  12°C/22°C
-                </p>
-              </div>
-
-              <div class="col">
-                <img src="./images/sun.png" />
-                <p>
-                  Thursday <br />
-                  18°C/25°C
-                </p>
-              </div>
+          <div class="weather-forecast" id="forecast">
           </div>
 
       </div>
